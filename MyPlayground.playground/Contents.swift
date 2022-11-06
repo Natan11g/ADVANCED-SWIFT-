@@ -249,3 +249,47 @@
 //
 //let savedVideo = (try? String(contentsOfFile: "saved.vid")) ?? "no video"
 //print(savedVideo)
+
+// MARK: GUARD
+
+func giveNatanMoney(money: Int) {
+    guard money > 100 else {
+        print("i dont want it")
+        return
+    }
+    print("aww thanks")
+}
+
+giveNatanMoney(money: 109)
+
+func takeNatansMoney(name: String) -> String {
+    let result: String
+    
+    if name == "natan" {
+        result = "GIVE ME NOW"
+    } else {
+        result = "damm you broke"
+    }
+    return result
+}
+
+print(takeNatansMoney(name: "natan"))
+
+func awardAnnouncement(name: String?) {
+    guard let winner = name else {
+        print("woops no winner")
+        return
+    }
+    print("congrats \(winner)")
+}
+
+awardAnnouncement(name: "christina")
+
+for i in 1...100 {
+    guard i % 8 == 0 else { continue }
+    print(i)
+}
+
+for i in 1...100 where i % 8 == 0 {
+        print(i)
+}
