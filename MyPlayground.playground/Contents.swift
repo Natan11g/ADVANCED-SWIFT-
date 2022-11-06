@@ -214,3 +214,38 @@
 //    print(name)
 //}
 
+
+//let isSelected = false
+//let issaved = false
+//var bothTrue = isSelected && issaved ? true: false        RANDOM STUFF REMINDER
+
+// MARK: NIL COALESCING
+//
+//import UIKit
+//
+//let name: String? = "Taylor"
+//let person = name ?? "natan"
+//
+//print(person)
+//
+//func optionalStuff() -> String? {
+//    return nil
+//}
+//
+//let something = optionalStuff() ?? "natan"
+//print(something)
+//
+//let savedText: String
+//
+//do {
+//    savedText = try String(contentsOfFile: "saved.txt")
+//} catch {
+//    print("failed to load saved text")
+//    savedText = "hello world!"
+//}
+//
+//print(savedText)
+//
+//
+//let savedVideo = (try? String(contentsOfFile: "saved.vid")) ?? "no video"
+//print(savedVideo)
